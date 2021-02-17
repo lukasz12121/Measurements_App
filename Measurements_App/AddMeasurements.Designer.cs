@@ -100,6 +100,11 @@ namespace Measurements_App
             // 
             this.numChestMeasure.DecimalPlaces = 1;
             this.numChestMeasure.Location = new System.Drawing.Point(9, 197);
+            this.numChestMeasure.Maximum = new decimal(new int[] {
+            200,
+            0,
+            0,
+            0});
             this.numChestMeasure.Name = "numChestMeasure";
             this.numChestMeasure.Size = new System.Drawing.Size(120, 20);
             this.numChestMeasure.TabIndex = 14;
@@ -116,6 +121,11 @@ namespace Measurements_App
             // 
             this.numStomachMeasure.DecimalPlaces = 1;
             this.numStomachMeasure.Location = new System.Drawing.Point(9, 288);
+            this.numStomachMeasure.Maximum = new decimal(new int[] {
+            200,
+            0,
+            0,
+            0});
             this.numStomachMeasure.Name = "numStomachMeasure";
             this.numStomachMeasure.Size = new System.Drawing.Size(120, 20);
             this.numStomachMeasure.TabIndex = 12;

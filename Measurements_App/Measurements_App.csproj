@@ -50,6 +50,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -91,11 +92,35 @@
     <Compile Include="BenchPressWindow.Designer.cs">
       <DependentUpon>BenchPressWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="DeadLiftChartWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeadLiftChartWindow.Designer.cs">
+      <DependentUpon>DeadLiftChartWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="DeadLiftWindow.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DeadLiftWindow.Designer.cs">
       <DependentUpon>DeadLiftWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BenchChartWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BenchChartWindow.Designer.cs">
+      <DependentUpon>BenchChartWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeasurementChartWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeasurementChartWindow.Designer.cs">
+      <DependentUpon>MeasurementChartWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SquatChartWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SquatChartWindow.Designer.cs">
+      <DependentUpon>SquatChartWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.cs">
       <SubType>Form</SubType>
@@ -129,14 +154,23 @@
     <EmbeddedResource Include="AddSquatRecord.resx">
       <DependentUpon>AddSquatRecord.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BenchChartWindow.resx">
+      <DependentUpon>BenchChartWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BenchPressWindow.resx">
       <DependentUpon>BenchPressWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeadLiftChartWindow.resx">
+      <DependentUpon>DeadLiftChartWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DeadLiftWindow.resx">
       <DependentUpon>DeadLiftWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeasurementChartWindow.resx">
+      <DependentUpon>MeasurementChartWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MeasurementsWindow.resx">
       <DependentUpon>MeasurementsWindow.cs</DependentUpon>
@@ -150,6 +184,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SquatChartWindow.resx">
+      <DependentUpon>SquatChartWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SquatWindow.resx">
       <DependentUpon>SquatWindow.cs</DependentUpon>
     </EmbeddedResource>

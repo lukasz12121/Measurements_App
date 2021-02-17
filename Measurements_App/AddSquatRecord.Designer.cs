@@ -30,6 +30,7 @@ namespace Measurements_App
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.numWeight = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.numRepCount = new System.Windows.Forms.NumericUpDown();
@@ -37,10 +38,9 @@ namespace Measurements_App
             this.dtpTrainingDate = new System.Windows.Forms.DateTimePicker();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
-            this.numWeight = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRepCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numWeight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numRepCount)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -57,6 +57,19 @@ namespace Measurements_App
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dodaj nowy rekord";
+            // 
+            // numWeight
+            // 
+            this.numWeight.DecimalPlaces = 1;
+            this.numWeight.Location = new System.Drawing.Point(9, 63);
+            this.numWeight.Maximum = new decimal(new int[] {
+            300,
+            0,
+            0,
+            0});
+            this.numWeight.Name = "numWeight";
+            this.numWeight.Size = new System.Drawing.Size(120, 20);
+            this.numWeight.TabIndex = 7;
             // 
             // label3
             // 
@@ -123,14 +136,6 @@ namespace Measurements_App
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // numWeight
-            // 
-            this.numWeight.DecimalPlaces = 1;
-            this.numWeight.Location = new System.Drawing.Point(9, 63);
-            this.numWeight.Name = "numWeight";
-            this.numWeight.Size = new System.Drawing.Size(120, 20);
-            this.numWeight.TabIndex = 7;
-            // 
             // AddSquatRecord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -143,8 +148,8 @@ namespace Measurements_App
             this.Text = "Dodaj rekord";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRepCount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numWeight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numRepCount)).EndInit();
             this.ResumeLayout(false);
 
         }
